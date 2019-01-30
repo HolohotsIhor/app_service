@@ -1,0 +1,43 @@
+/*  Structure
+
+1.  Fonts including
+2.  General styles
+3.  Header
+
+*/
+/* 1. Fonts including */
+@font-face {
+  font-family: "Open-Sans-Light";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/OpenSansLight/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansLight/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSansLight/OpenSans-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Open-Sans-Regular";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/OpenSansRegular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSans-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Open-Sans-Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/OpenSansSemiBold/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansSemiBold/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSansSemiBold/OpenSans-SemiBold.ttf") format("truetype"); }
+
+/* 2. General styles */
+body {
+  color: #787878;
+  letter-spacing: 1px;
+  font-family: "Open-Sans-Regular", sans-serif, Arial;
+  min-width: 320px;
+  max-width: 100%;
+  font-size: 16px; }
+
+section {
+  padding: 150px 0px;
+  text-align: center; }
+
+h2 {
+  font-size: 2rem; }
+
+/* 3. Header */
