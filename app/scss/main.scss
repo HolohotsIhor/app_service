@@ -213,11 +213,12 @@ header {
             a {
                 color: $white;
                 text-transform: uppercase;
-                margin-right: 63px;
+                margin-right: 68px;
                 transition: .2s;
+                font-family: "Open-Sans-Light", sans-serif, Arial;
 
                 @media only screen and (max-device-width: 1199px) {
-                    margin-right: 27px;
+                    margin-right: 33px;
                 }
             }
 

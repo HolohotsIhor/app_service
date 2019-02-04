@@ -142,13 +142,14 @@ header {
     header .nav-box nav.horizontal a {
       color: #fff;
       text-transform: uppercase;
-      margin-right: 63px;
+      margin-right: 68px;
       -webkit-transition: .2s;
       -o-transition: .2s;
-      transition: .2s; }
+      transition: .2s;
+      font-family: "Open-Sans-Light", sans-serif, Arial; }
       @media only screen and (max-device-width: 1199px) {
         header .nav-box nav.horizontal a {
-          margin-right: 27px; } }
+          margin-right: 33px; } }
     header .nav-box nav.horizontal a:hover {
       text-decoration: none;
       color: #FFD700;
