@@ -3,6 +3,8 @@
 1.  Fonts including
 2.  General styles
 3.  Header
+4.  Slider
+5.  Items
 
 */
 /* 1. Fonts including */
@@ -48,20 +50,23 @@ h2 {
 header {
   background-color: #0a0a0a;
   height: auto;
-  padding: 30px 0 15px;
+  padding: 20px 0;
   /* Mobile navigation */ }
-  @media only screen and (max-device-width: 991px) {
+  @media only screen and (max-device-width: 575px) {
     header {
-      padding: 40px 0 10px; } }
+      padding: 20px 0 10px; } }
   header .top-bar {
     padding-bottom: 20px; }
     @media only screen and (max-device-width: 991px) {
       header .top-bar {
         padding-bottom: 5px; } }
     header .top-bar .logo-box {
-      margin-top: -15px; }
+      margin-top: -5px; }
       header .top-bar .logo-box img {
         max-width: 100%; }
+        @media only screen and (max-device-width: 575px) {
+          header .top-bar .logo-box img {
+            margin-top: 10px; } }
     header .top-bar .social-icons-box {
       margin-top: -5px; }
       header .top-bar .social-icons-box a:nth-child(1) {
@@ -73,11 +78,10 @@ header {
         -o-transition: .2s;
         transition: .2s; }
       header .top-bar .social-icons-box i:hover {
-        color: #FFD700; }
+        color: #ffe5db; }
       header .top-bar .social-icons-box .wrapper-info {
         float: right;
         color: #fff;
-        margin-top: -15px;
         font-size: 12px; }
         @media only screen and (max-device-width: 991px) {
           header .top-bar .social-icons-box .wrapper-info {
@@ -130,7 +134,7 @@ header {
               header .top-bar .social-icons-box .wrapper-info .right-box .phone-box a {
                 font-size: 12px; } }
           header .top-bar .social-icons-box .wrapper-info .right-box .phone-box a:hover {
-            color: #FFD700; }
+            color: #ffe5db; }
     @media only screen and (max-device-width: 991px) {
       header .top-bar .social-icons-box.media {
         display: none; } }
@@ -152,8 +156,8 @@ header {
           margin-right: 33px; } }
     header .nav-box nav.horizontal a:hover {
       text-decoration: none;
-      color: #FFD700;
-      border-bottom: solid 1px #FFD700; }
+      color: #ffe5db;
+      border-bottom: solid 1px #ffe5db; }
     header .nav-box nav.horizontal a:last-child {
       margin-right: 0px; }
   header .toggle_mnu {
@@ -318,3 +322,55 @@ header {
           font-size: 22px; }
         header .top_mnu .more-info-box .social-box a:first-child i {
           margin-right: 10px; }
+
+/* 4.  Slider */
+.slider {
+  padding: 0; }
+  .slider .carousel {
+    background-color: #0a0a0a;
+    padding: 80px 0 80px 0; }
+    @media only screen and (max-device-width: 575px) {
+      .slider .carousel {
+        padding: 25px 0 60px 0; } }
+    .slider .carousel .carousel-inner img {
+      max-width: 1024px;
+      margin: 0 auto; }
+      @media only screen and (max-device-width: 1400px) {
+        .slider .carousel .carousel-inner img {
+          max-width: 800px; } }
+      @media only screen and (max-device-width: 1199px) {
+        .slider .carousel .carousel-inner img {
+          max-width: 70%; } }
+    .slider .carousel .text-box {
+      padding-top: 20px; }
+      .slider .carousel .text-box a {
+        color: #ffe5db; }
+      .slider .carousel .text-box a:hover {
+        text-decoration: none; }
+      .slider .carousel .text-box h2 {
+        margin-bottom: 0; }
+        .slider .carousel .text-box h2 a {
+          font-weight: 600;
+          font-family: "Open-Sans-Bold", sans-serif, Arial;
+          font-size: 45px;
+          letter-spacing: -1px; }
+          @media only screen and (max-device-width: 991px) {
+            .slider .carousel .text-box h2 a {
+              font-size: 38px; } }
+          @media only screen and (max-device-width: 575px) {
+            .slider .carousel .text-box h2 a {
+              font-size: 32px; } }
+      .slider .carousel .text-box p a {
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: -1px; }
+        @media only screen and (max-device-width: 991px) {
+          .slider .carousel .text-box p a {
+            font-size: 18px; } }
+        @media only screen and (max-device-width: 575px) {
+          .slider .carousel .text-box p a {
+            font-size: 16px; } }
+
+/* 5.  Items */
+.items {
+  background-color: #fafafa; }

@@ -3,6 +3,8 @@
 1.  Fonts including
 2.  General styles
 3.  Header
+4.  Slider
+5.  Items
 
 */
 
@@ -35,7 +37,8 @@ $padding-small: 80px 0px;
 $typography-color-standart: 16px;
 $white: #fff;
 $dark: #0a0a0a;
-$gold: #FFD700;
+$gold: #ffe5db;
+$bg-grey: #fafafa;
 
 body {
     color: #787878;
@@ -65,10 +68,10 @@ h2 {
 header {
     background-color: $dark;
     height: auto;
-    padding: 30px 0 15px;
+    padding: 20px 0;
 
-    @media only screen and (max-device-width: 991px) {
-        padding: 40px 0 10px;
+    @media only screen and (max-device-width: 575px) {
+        padding: 20px 0 10px;
     }
 
     .top-bar {
@@ -79,10 +82,14 @@ header {
         }
 
         .logo-box {
-            margin-top: -15px;
+            margin-top: -5px;
 
             img {
                 max-width: 100%;
+
+                @media only screen and (max-device-width: 575px) {
+                    margin-top: 10px;
+                }
             }
         }
 
@@ -100,14 +107,13 @@ header {
                 transition: .2s;
             }
 
-            i:hover{
+            i:hover {
                 color: $gold;
             }
 
             .wrapper-info {
                 float: right;
                 color: $white;
-                margin-top: -15px;
                 font-size: 12px;
 
                 @media only screen and (max-device-width: 991px) {
@@ -432,13 +438,98 @@ header {
 
             .social-box {
                 margin-bottom: 15px;
-                i{
+
+                i {
                     font-size: 22px;
                 }
-                a:first-child i{
+
+                a:first-child i {
                     margin-right: 10px;
                 }
             }
         }
     }
+}
+
+
+/* 4.  Slider */
+.slider {
+    padding: 0;
+
+    .carousel {
+        background-color: $dark;
+        padding: 80px 0 80px 0;
+
+        @media only screen and (max-device-width: 575px) {
+            padding: 25px 0 60px 0;
+        }
+
+        .carousel-inner {
+            img {
+                max-width: 1024px;
+                margin: 0 auto;
+
+                @media only screen and (max-device-width: 1400px) {
+                    max-width: 800px;
+                }
+
+                @media only screen and (max-device-width: 1199px) {
+                    max-width: 70%;
+                }
+            }
+        }
+
+        .text-box {
+            padding-top: 20px;
+            
+            a {
+                color: $gold;
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+
+            h2 {
+                margin-bottom: 0;
+
+                a {
+                    font-weight: 600;
+                    font-family: "Open-Sans-Bold", sans-serif, Arial;
+                    font-size: 45px;
+                    letter-spacing: -1px;
+
+                    @media only screen and (max-device-width: 991px) {
+                        font-size: 38px;
+                    }
+
+                    @media only screen and (max-device-width: 575px) {
+                        font-size: 32px;
+                    }
+                }
+            }
+
+            p {
+                a {
+                    font-weight: 600;
+                    font-size: 20px;
+                    letter-spacing: -1px;
+
+                    @media only screen and (max-device-width: 991px) {
+                        font-size: 18px;
+                    }
+
+                    @media only screen and (max-device-width: 575px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 5.  Items */
+.items{
+    background-color: $bg-grey;
 }
