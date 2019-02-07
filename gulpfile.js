@@ -26,7 +26,6 @@ gulp.task('scripts', function(){
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/parallax.js-1.5.0/parallax.min.js',
 		'app/libs/bootstrap/bootstrap.min.js',
-		// 'app/libs/pageScrool2/PageScroll2id.min.js',
 		// 'app/libs/owlCarousel2-2.3.4/dist/owl.carousel.min.js',
 		// 'app/libs/jqueryCounter/counter.lib.js',
 		// 'app/libs/jqueryCounter/jquery.counterup.min.js',

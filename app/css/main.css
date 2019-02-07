@@ -5,6 +5,9 @@
 3.  Header
 4.  Slider
 5.  Items
+6.  Why us
+7.  Map
+8.  Footer
 
 */
 /* 1. Fonts including */
@@ -169,6 +172,8 @@ header {
     right: 20px;
     top: 5px;
     background: rgba(0, 0, 0, 0.95);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: none; }
     @media only screen and (max-device-width: 991px) {
       header .toggle_mnu {
@@ -288,6 +293,12 @@ header {
       header .top_mnu ul li:nth-child(4) a {
         -webkit-animation-delay: 0.3s;
         animation-delay: 0.3s; }
+      header .top_mnu ul li:nth-child(5) a {
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s; }
+      header .top_mnu ul li:nth-child(6) a {
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s; }
       header .top_mnu ul a {
         color: #fff;
         display: block;
@@ -312,6 +323,8 @@ header {
       header .top_mnu ul a:hover {
         text-decoration: none; }
     header .top_mnu .more-info-box {
+      -webkit-animation-delay: 0.6s;
+      animation-delay: 0.6s;
       color: #fff;
       text-align: center; }
       header .top_mnu .more-info-box i {
@@ -332,6 +345,8 @@ header {
     @media only screen and (max-device-width: 575px) {
       .slider .carousel {
         padding: 25px 0 60px 0; } }
+    .slider .carousel .carousel-inner .carousel-item:first-child .text-box a {
+      opacity: 0; }
     .slider .carousel .carousel-inner img {
       max-width: 1024px;
       margin: 0 auto; }
@@ -363,7 +378,9 @@ header {
       .slider .carousel .text-box p a {
         font-weight: 600;
         font-size: 20px;
-        letter-spacing: -1px; }
+        letter-spacing: -1px;
+        -webkit-animation-delay: .3s;
+                animation-delay: .3s; }
         @media only screen and (max-device-width: 991px) {
           .slider .carousel .text-box p a {
             font-size: 18px; } }
@@ -406,12 +423,18 @@ header {
     .items .nav.nav-tabs li:nth-child(1) a {
       background: url("../img/menu_sprite2.png") -3px 1px no-repeat;
       padding: 20px 10px 20px 46px; }
+      @media only screen and (max-device-width: 340px) {
+        .items .nav.nav-tabs li:nth-child(1) a {
+          background: url("../img/menu_sprite2.png") 3px 1px no-repeat; } }
     .items .nav.nav-tabs li:nth-child(2) a {
       padding: 20px 10px 20px 54px;
       background: url("../img/menu_sprite2.png") 0 -58px no-repeat; }
     .items .nav.nav-tabs li:nth-child(3) a {
       padding: 20px 10px 20px 71px;
       background: url("../img/menu_sprite2.png") 9px -113px no-repeat; }
+      @media only screen and (max-device-width: 340px) {
+        .items .nav.nav-tabs li:nth-child(3) a {
+          background: url(../img/menu_sprite2.png) 2px -113px no-repeat; } }
     .items .nav.nav-tabs li:nth-child(4) a {
       padding: 20px 10px 20px 54px;
       background: url("../img/menu_sprite2.png") 4px -172px no-repeat; }
@@ -451,6 +474,9 @@ header {
       @media only screen and (max-device-width: 991px) {
         .items .tab-content p {
           line-height: 30px; } }
+      @media only screen and (max-device-width: 340px) {
+        .items .tab-content p {
+          margin-bottom: 10px; } }
     .items .tab-content .item-box {
       margin-bottom: 50px; }
       .items .tab-content .item-box a {
@@ -697,3 +723,213 @@ header {
       transition: .5s; }
     .items .tab-content #ipad .item-box:nth-child(17):hover a {
       background: url(../img/gadgets/12main2.png) center bottom 35px no-repeat; }
+    .items .tab-content #mac .item-box:nth-child(1) a {
+      background: url(../img/gadgets/macbook.png) center bottom 35px no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .items .tab-content #mac .item-box:nth-child(1):hover a {
+      background: url(../img/gadgets/macbook-hover.png) center bottom 35px no-repeat; }
+    .items .tab-content #mac .item-box:nth-child(2) a {
+      background: url(../img/gadgets/macbook-air.png) center bottom 35px no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .items .tab-content #mac .item-box:nth-child(2):hover a {
+      background: url(../img/gadgets/macbook-air-hover.png) center bottom 35px no-repeat; }
+    .items .tab-content #mac .item-box:nth-child(3) a {
+      background: url(../img/gadgets/macbook-pro.png) center bottom 35px no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .items .tab-content #mac .item-box:nth-child(3):hover a {
+      background: url(../img/gadgets/macbook-pro-hover.png) center bottom 35px no-repeat; }
+    .items .tab-content #mac .item-box:nth-child(4) a {
+      background: url(../img/gadgets/imac.png) center bottom 35px no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .items .tab-content #mac .item-box:nth-child(4):hover a {
+      background: url(../img/gadgets/imac-hover.png) center bottom 35px no-repeat; }
+    .items .tab-content #ipod .item-box:nth-child(1) a {
+      background: url(../img/gadgets/ipod_nano7.png) center bottom 35px no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .items .tab-content #ipod .item-box:nth-child(1):hover a {
+      background: url(../img/gadgets/ipod_nano7_hover.png) center bottom 35px no-repeat; }
+    .items .tab-content #ipod .item-box:nth-child(2) a {
+      background: url(../img/gadgets/ipod_nano.png) center bottom 35px no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .items .tab-content #ipod .item-box:nth-child(2):hover a {
+      background: url(../img/gadgets/ipod_nano_hover.png) center bottom 35px no-repeat; }
+    .items .tab-content #ipod .item-box:nth-child(3) a {
+      background: url(../img/gadgets/ipod_touch5.png) center bottom 35px no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .items .tab-content #ipod .item-box:nth-child(3):hover a {
+      background: url(../img/gadgets/ipod_touch5_hover.png) center bottom 35px no-repeat; }
+    .items .tab-content #ipod .item-box:nth-child(4) a {
+      background: url(../img/gadgets/ipod_touch_4.png) center bottom 35px no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .items .tab-content #ipod .item-box:nth-child(4):hover a {
+      background: url(../img/gadgets/ipod_touch_4_hover.png) center bottom 35px no-repeat; }
+    .items .tab-content #ipod .item-box:nth-child(5) a {
+      background: url(../img/gadgets/ipod_shuffle.png) center bottom 35px no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .items .tab-content #applewatch .item-box:nth-child(1) a {
+      background: url(../img/gadgets/apple_watch_edition_hover.png) center bottom 65px no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .items .tab-content #applewatch .item-box:nth-child(1):hover a {
+      background: url(../img/gadgets/apple_watch_edition.png) center bottom 65px no-repeat; }
+    .items .tab-content #applewatch .item-box:nth-child(2) a {
+      background: url(../img/gadgets/apple_watch_sport_hover.png) center bottom 65px no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .items .tab-content #applewatch .item-box:nth-child(2):hover a {
+      background: url(../img/gadgets/apple_watch_sport.png) center bottom 65px no-repeat; }
+    .items .tab-content #applewatch .item-box:nth-child(3) a {
+      background: url(../img/gadgets/apple_watch_hover.png) center bottom 65px no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .items .tab-content #applewatch .item-box:nth-child(3):hover a {
+      background: url(../img/gadgets/apple_watch.png) center bottom 65px no-repeat; }
+    .items .tab-content #applewatch .item-box:nth-child(4) a {
+      background: url(../img/gadgets/apple-watch-series-3.png) center bottom 65px no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .items .tab-content #applewatch .item-box:nth-child(4):hover a {
+      background: url(../img/gadgets/apple-watch-series-3-hover.png) center bottom 65px no-repeat; }
+    .items .tab-content #applewatch .item-box:nth-child(5) a {
+      background: url(../img/gadgets/apple-watch-series-41.png) center bottom 65px no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .items .tab-content #applewatch .item-box:nth-child(5):hover a {
+      background: url(../img/gadgets/apple-watch-series-4.png) center bottom 65px no-repeat; }
+
+/* 6.  Why us */
+.why-us .item-box {
+  opacity: 0;
+  margin-bottom: 40px; }
+  .why-us .item-box .icon-box {
+    margin-bottom: 20px; }
+    .why-us .item-box .icon-box i {
+      color: #999;
+      font-size: 60px; }
+  .why-us .item-box h3 {
+    color: #0a0a0a;
+    margin-bottom: 15px;
+    font-size: 22px; }
+    @media only screen and (max-device-width: 1199px) {
+      .why-us .item-box h3 {
+        font-size: 18px;
+        margin-bottom: 10px; } }
+  .why-us .item-box p {
+    font-family: "Open-Sans-Light", sans-serif, Arial;
+    line-height: 30px; }
+    @media only screen and (max-device-width: 1199px) {
+      .why-us .item-box p {
+        font-size: 16px;
+        line-height: 26px; } }
+
+.why-us .item-box:nth-child(1) {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s; }
+  @media only screen and (max-device-width: 639px) {
+    .why-us .item-box:nth-child(1) {
+      -webkit-animation-delay: 0;
+              animation-delay: 0; } }
+
+.why-us .item-box:nth-child(2) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s; }
+  @media only screen and (max-device-width: 639px) {
+    .why-us .item-box:nth-child(2) {
+      -webkit-animation-delay: 0;
+              animation-delay: 0; } }
+
+.why-us .item-box:nth-child(3) {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s; }
+  @media only screen and (max-device-width: 639px) {
+    .why-us .item-box:nth-child(3) {
+      -webkit-animation-delay: 0;
+              animation-delay: 0; } }
+
+.why-us .item-box:nth-child(4) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+  margin-bottom: 0; }
+  @media only screen and (max-device-width: 639px) {
+    .why-us .item-box:nth-child(4) {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 40px;
+      -webkit-animation-delay: 0;
+              animation-delay: 0; } }
+
+.why-us .item-box:nth-child(5) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+  margin-bottom: 0; }
+  @media only screen and (max-device-width: 639px) {
+    .why-us .item-box:nth-child(5) {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 40px;
+      -webkit-animation-delay: 0;
+              animation-delay: 0; } }
+
+.why-us .item-box:nth-child(6) {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+  margin-bottom: 0; }
+  @media only screen and (max-device-width: 639px) {
+    .why-us .item-box:nth-child(6) {
+      -webkit-animation-delay: 0;
+              animation-delay: 0; } }
+
+/* 7.  Map */
+.map {
+  padding: 0;
+  background-color: #333; }
+
+/* 8.  Footer */
+footer {
+  background-color: #333;
+  padding: 40px 0 0 0;
+  text-align: center; }
+  footer ul {
+    margin-bottom: 0; }
+    footer ul li a {
+      color: #fff;
+      font-family: "Open-Sans-Light", sans-serif, Arial;
+      line-height: 35px; }
+    footer ul li a:hover {
+      color: #ffe5db; }
+  footer .services-box {
+    margin-bottom: 40px; }
+    @media only screen and (max-device-width: 767px) {
+      footer .services-box {
+        margin-bottom: 0px; } }
+  @media only screen and (max-device-width: 767px) {
+    footer .other-services-box {
+      margin-bottom: 40px; } }
+  footer .copyrite-box {
+    background-color: #0a0a0a;
+    padding: 30px 0 15px 0;
+    color: #ffe5db;
+    font-size: 12px; }

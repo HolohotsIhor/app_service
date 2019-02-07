@@ -5,6 +5,9 @@
 3.  Header
 4.  Slider
 5.  Items
+6.  Why us
+7.  Map
+8.  Footer
 
 */
 
@@ -252,6 +255,7 @@ header {
         right: 20px;
         top: 5px;
         background: rgba(0, 0, 0, .95);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5); 
         display: none;
 
         @media only screen and (max-device-width: 991px) {
@@ -396,6 +400,16 @@ header {
                     -webkit-animation-delay: 0.3s;
                     animation-delay: 0.3s;
                 }
+
+                &:nth-child(5) a {
+                    -webkit-animation-delay: 0.4s;
+                    animation-delay: 0.4s;
+                }
+
+                &:nth-child(6) a {
+                    -webkit-animation-delay: 0.5s;
+                    animation-delay: 0.5s;
+                }
             }
 
             a {
@@ -431,6 +445,9 @@ header {
         }
 
         .more-info-box {
+            -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+
             i {
                 color: $white;
             }
@@ -467,6 +484,15 @@ header {
         }
 
         .carousel-inner {
+
+            .carousel-item:first-child{
+                .text-box{
+                    a{
+                        opacity: 0;
+                    }
+                }
+            }
+
             img {
                 max-width: 1024px;
                 margin: 0 auto;
@@ -516,6 +542,7 @@ header {
                     font-weight: 600;
                     font-size: 20px;
                     letter-spacing: -1px;
+                    animation-delay: .3s;
 
                     @media only screen and (max-device-width: 991px) {
                         font-size: 18px;
@@ -556,6 +583,7 @@ header {
                 color: $white;
                 font-family: "Open-Sans-Light", sans-serif, Arial;
                 font-size: 14px;
+
                 @media only screen and (max-device-width: 1199px) {
                     font-size: 13px;
                 }
@@ -567,7 +595,7 @@ header {
 
         }
 
-        li:last-child{
+        li:last-child {
             border-right: none;
         }
 
@@ -578,6 +606,10 @@ header {
         li:nth-child(1) a {
             background: url("../img/menu_sprite2.png") -3px 1px no-repeat;
             padding: 20px 10px 20px 46px;
+
+            @media only screen and (max-device-width: 340px) {
+                background: url("../img/menu_sprite2.png") 3px 1px no-repeat;
+            }
         }
 
         li:nth-child(2) a {
@@ -588,6 +620,10 @@ header {
         li:nth-child(3) a {
             padding: 20px 10px 20px 71px;
             background: url("../img/menu_sprite2.png") 9px -113px no-repeat;
+
+            @media only screen and (max-device-width: 340px) {
+                background: url(../img/menu_sprite2.png) 2px -113px no-repeat;
+            }
         }
 
         li:nth-child(4) a {
@@ -646,24 +682,29 @@ header {
             letter-spacing: -1px;
             line-height: 20px;
             margin-bottom: 50px;
+
             @media only screen and (max-device-width: 991px) {
                 line-height: 30px;
+            }
+
+            @media only screen and (max-device-width: 340px) {
+                margin-bottom: 10px;
             }
         }
 
         .item-box {
-                margin-bottom: 50px;
+            margin-bottom: 50px;
 
-                a {
-                    padding-top: 205px;
-                    display: block;
-                    color: $dark;
-                }
-
-                a:hover {
-                    text-decoration: none;
-                }
+            a {
+                padding-top: 205px;
+                display: block;
+                color: $dark;
             }
+
+            a:hover {
+                text-decoration: none;
+            }
+        }
 
         #iphone {
 
@@ -821,7 +862,7 @@ header {
             }
         }
 
-        #ipad{
+        #ipad {
 
             .item-box:nth-child(1) a {
                 background: url(../img/gadgets/ipad2.png) center bottom 35px no-repeat;
@@ -877,12 +918,6 @@ header {
                 background: url(../img/gadgets/ipad_mini4_hover.png) center bottom 35px no-repeat;
             }
 
-
-
-
-
-
-
             .item-box:nth-child(7) a {
                 background: url(../img/gadgets/ipad_mini4.png) center bottom 35px no-repeat;
                 transition: .5s;
@@ -937,13 +972,6 @@ header {
                 background: url(../img/gadgets/ipad_air2_hover.png) center bottom 35px no-repeat;
             }
 
-
-
-
-
-
-
-
             .item-box:nth-child(13) a {
                 background: url(../img/gadgets/ipad_pro_10.5.png) center bottom 35px no-repeat;
                 transition: .5s;
@@ -989,5 +1017,271 @@ header {
                 background: url(../img/gadgets/12main2.png) center bottom 35px no-repeat;
             }
         }
+
+        #mac {
+
+            .item-box:nth-child(1) a {
+                background: url(../img/gadgets/macbook.png) center bottom 35px no-repeat;
+                transition: .5s;
+            }
+
+            .item-box:nth-child(1):hover a {
+                background: url(../img/gadgets/macbook-hover.png) center bottom 35px no-repeat;
+            }
+
+            .item-box:nth-child(2) a {
+                background: url(../img/gadgets/macbook-air.png) center bottom 35px no-repeat;
+                transition: .5s;
+            }
+
+            .item-box:nth-child(2):hover a {
+                background: url(../img/gadgets/macbook-air-hover.png) center bottom 35px no-repeat;
+            }
+
+            .item-box:nth-child(3) a {
+                background: url(../img/gadgets/macbook-pro.png) center bottom 35px no-repeat;
+                transition: .5s;
+            }
+
+            .item-box:nth-child(3):hover a {
+                background: url(../img/gadgets/macbook-pro-hover.png) center bottom 35px no-repeat;
+            }
+
+            .item-box:nth-child(4) a {
+                background: url(../img/gadgets/imac.png) center bottom 35px no-repeat;
+                transition: .5s;
+            }
+
+            .item-box:nth-child(4):hover a {
+                background: url(../img/gadgets/imac-hover.png) center bottom 35px no-repeat;
+            }
+        }
+
+        #ipod {
+
+            .item-box:nth-child(1) a {
+                background: url(../img/gadgets/ipod_nano7.png) center bottom 35px no-repeat;
+                transition: .5s;
+            }
+
+            .item-box:nth-child(1):hover a {
+                background: url(../img/gadgets/ipod_nano7_hover.png) center bottom 35px no-repeat;
+            }
+
+            .item-box:nth-child(2) a {
+                background: url(../img/gadgets/ipod_nano.png) center bottom 35px no-repeat;
+                transition: .5s;
+            }
+
+            .item-box:nth-child(2):hover a {
+                background: url(../img/gadgets/ipod_nano_hover.png) center bottom 35px no-repeat;
+            }
+
+            .item-box:nth-child(3) a {
+                background: url(../img/gadgets/ipod_touch5.png) center bottom 35px no-repeat;
+                transition: .5s;
+            }
+
+            .item-box:nth-child(3):hover a {
+                background: url(../img/gadgets/ipod_touch5_hover.png) center bottom 35px no-repeat;
+            }
+
+            .item-box:nth-child(4) a {
+                background: url(../img/gadgets/ipod_touch_4.png) center bottom 35px no-repeat;
+                transition: .5s;
+            }
+
+            .item-box:nth-child(4):hover a {
+                background: url(../img/gadgets/ipod_touch_4_hover.png) center bottom 35px no-repeat;
+            }
+
+            .item-box:nth-child(5) a {
+                background: url(../img/gadgets/ipod_shuffle.png) center bottom 35px no-repeat;
+                transition: .5s;
+            }
+        }
+
+        #applewatch {
+
+            .item-box:nth-child(1) a {
+                background: url(../img/gadgets/apple_watch_edition_hover.png) center bottom 65px no-repeat;
+                transition: .5s;
+            }
+
+            .item-box:nth-child(1):hover a {
+                background: url(../img/gadgets/apple_watch_edition.png) center bottom 65px no-repeat;
+            }
+
+            .item-box:nth-child(2) a {
+                background: url(../img/gadgets/apple_watch_sport_hover.png) center bottom 65px no-repeat;
+                transition: .5s;
+            }
+
+            .item-box:nth-child(2):hover a {
+                background: url(../img/gadgets/apple_watch_sport.png) center bottom 65px no-repeat;
+            }
+
+            .item-box:nth-child(3) a {
+                background: url(../img/gadgets/apple_watch_hover.png) center bottom 65px no-repeat;
+                transition: .5s;
+            }
+
+            .item-box:nth-child(3):hover a {
+                background: url(../img/gadgets/apple_watch.png) center bottom 65px no-repeat;
+            }
+
+            .item-box:nth-child(4) a {
+                background: url(../img/gadgets/apple-watch-series-3.png) center bottom 65px no-repeat;
+                transition: .5s;
+            }
+
+            .item-box:nth-child(4):hover a {
+                background: url(../img/gadgets/apple-watch-series-3-hover.png) center bottom 65px no-repeat;
+            }
+
+            .item-box:nth-child(5) a {
+                background: url(../img/gadgets/apple-watch-series-41.png) center bottom 65px no-repeat;
+                transition: .5s;
+            }
+
+            .item-box:nth-child(5):hover a {
+                background: url(../img/gadgets/apple-watch-series-4.png) center bottom 65px no-repeat;
+            }
+        }
+    }
+}
+
+/* 6.  Why us */
+.why-us {
+    .item-box {
+        opacity: 0;
+        margin-bottom: 40px;
+
+        .icon-box {
+            margin-bottom: 20px;
+
+            i {
+                color: #999;
+                font-size: 60px;
+            }
+        }
+
+        h3 {
+            color: $dark;
+            margin-bottom: 15px;
+            font-size: 22px;
+            @media only screen and (max-device-width: 1199px) {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+        }
+
+        p {
+            font-family: "Open-Sans-Light", sans-serif, Arial;
+            line-height: 30px;
+            @media only screen and (max-device-width: 1199px) {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    .item-box:nth-child(1){
+        animation-delay: .1s;
+        @media only screen and (max-device-width: 639px) {
+            animation-delay: 0;
+        }
+    }
+
+    .item-box:nth-child(2){
+        animation-delay: .2s;
+        @media only screen and (max-device-width: 639px) {
+            animation-delay: 0;
+        }
+    }
+
+    .item-box:nth-child(3){
+        animation-delay: .3s;
+        @media only screen and (max-device-width: 639px) {
+            animation-delay: 0;
+        }
+    }
+
+    .item-box:nth-child(4){
+        animation-delay: .4s;
+        margin-bottom: 0;
+        @media only screen and (max-device-width: 639px) {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 40px;
+            animation-delay: 0;
+        }
+    }
+
+    .item-box:nth-child(5){
+        animation-delay: .5s;
+        margin-bottom: 0;
+        @media only screen and (max-device-width: 639px) {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 40px;
+            animation-delay: 0;
+        }
+    }
+
+    .item-box:nth-child(6){
+        animation-delay: .6s;
+        margin-bottom: 0;
+        @media only screen and (max-device-width: 639px) {
+            animation-delay: 0;
+        }
+    }
+}
+
+/* 7.  Map */
+.map{
+    padding: 0;
+    background-color: #333;
+}
+
+/* 8.  Footer */
+footer{
+    background-color: #333;
+    padding: 40px 0 0 0;
+    text-align: center;
+
+    ul{
+        margin-bottom: 0;
+        li{
+            a{
+                color: $white;
+                font-family: "Open-Sans-Light", sans-serif, Arial;
+                line-height: 35px;
+            }
+
+            a:hover{
+                color: $gold;
+            }
+        }
+    }   
+    
+    .services-box{
+        margin-bottom: 40px;
+        @media only screen and (max-device-width: 767px) {
+            margin-bottom: 0px;
+        }
+    }
+
+    .other-services-box{
+        @media only screen and (max-device-width: 767px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    .copyrite-box{
+        background-color: $dark;
+        padding: 30px 0 15px 0;
+        color: $gold;
+         font-size: 12px;
     }
 }

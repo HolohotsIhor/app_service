@@ -38,6 +38,21 @@ $(document).ready(function() {
 
     /* Slider */
     $('.carousel').carousel({
-        interval: 4000
+        interval: 8000
     })
+
+    /* Scrool animation */
+    $(window).scroll(function() {
+        $('.mov').each(function(){
+          var imagePos = $(this).offset().top;
+          var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow+600) {
+            $(this).addClass('fadeIn');
+            $(this).css('opacity','1');
+        }
+    });
+    });
+
 });
+
+  
