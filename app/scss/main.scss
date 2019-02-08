@@ -8,6 +8,8 @@
 6.  Why us
 7.  Map
 8.  Footer
+9.  Inner content
+10. Contact form
 
 */
 
@@ -221,16 +223,29 @@ header {
                 display: none;
             }
 
+            ul{
+                padding: 0;
+            }
+
+            li{
+                list-style: none;
+                display: inline-block;
+                margin-right: 75px;
+                @media only screen and (max-device-width: 1199px) {
+                    margin-right: 40px;
+                }
+            }
+
+            li:last-child {
+                margin-right: 0px;
+            }
+
             a {
                 color: $white;
-                text-transform: uppercase;
-                margin-right: 68px;
+                
                 transition: .2s;
-                font-family: "Open-Sans-Light", sans-serif, Arial;
-
-                @media only screen and (max-device-width: 1199px) {
-                    margin-right: 33px;
-                }
+                font-family: "Open-Sans-Bold", sans-serif, Arial;
+                font-weight: bold;
             }
 
             a:hover {
@@ -239,8 +254,10 @@ header {
                 border-bottom: solid 1px $gold;
             }
 
-            a:last-child {
-                margin-right: 0px;
+            li.current-menu-item a{
+                text-decoration: none;
+                color: $gold;
+                border-bottom: solid 1px $gold;
             }
         }
     }
@@ -255,7 +272,7 @@ header {
         right: 20px;
         top: 5px;
         background: rgba(0, 0, 0, .95);
-        box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         display: none;
 
         @media only screen and (max-device-width: 991px) {
@@ -485,9 +502,9 @@ header {
 
         .carousel-inner {
 
-            .carousel-item:first-child{
-                .text-box{
-                    a{
+            .carousel-item:first-child {
+                .text-box {
+                    a {
                         opacity: 0;
                     }
                 }
@@ -1170,6 +1187,7 @@ header {
             color: $dark;
             margin-bottom: 15px;
             font-size: 22px;
+
             @media only screen and (max-device-width: 1199px) {
                 font-size: 18px;
                 margin-bottom: 10px;
@@ -1179,6 +1197,7 @@ header {
         p {
             font-family: "Open-Sans-Light", sans-serif, Arial;
             line-height: 30px;
+
             @media only screen and (max-device-width: 1199px) {
                 font-size: 16px;
                 line-height: 26px;
@@ -1186,30 +1205,34 @@ header {
         }
     }
 
-    .item-box:nth-child(1){
+    .item-box:nth-child(1) {
         animation-delay: .1s;
+
         @media only screen and (max-device-width: 639px) {
             animation-delay: 0;
         }
     }
 
-    .item-box:nth-child(2){
+    .item-box:nth-child(2) {
         animation-delay: .2s;
+
         @media only screen and (max-device-width: 639px) {
             animation-delay: 0;
         }
     }
 
-    .item-box:nth-child(3){
+    .item-box:nth-child(3) {
         animation-delay: .3s;
+
         @media only screen and (max-device-width: 639px) {
             animation-delay: 0;
         }
     }
 
-    .item-box:nth-child(4){
+    .item-box:nth-child(4) {
         animation-delay: .4s;
         margin-bottom: 0;
+
         @media only screen and (max-device-width: 639px) {
             font-size: 16px;
             line-height: 26px;
@@ -1218,9 +1241,10 @@ header {
         }
     }
 
-    .item-box:nth-child(5){
+    .item-box:nth-child(5) {
         animation-delay: .5s;
         margin-bottom: 0;
+
         @media only screen and (max-device-width: 639px) {
             font-size: 16px;
             line-height: 26px;
@@ -1229,9 +1253,10 @@ header {
         }
     }
 
-    .item-box:nth-child(6){
+    .item-box:nth-child(6) {
         animation-delay: .6s;
         margin-bottom: 0;
+
         @media only screen and (max-device-width: 639px) {
             animation-delay: 0;
         }
@@ -1239,49 +1264,718 @@ header {
 }
 
 /* 7.  Map */
-.map{
+.map {
     padding: 0;
-    background-color: #333;
+    height: 450px;
 }
 
 /* 8.  Footer */
-footer{
-    background-color: #333;
+footer {
+    background-color: #222;
     padding: 40px 0 0 0;
     text-align: center;
 
-    ul{
+    ul {
         margin-bottom: 0;
-        li{
-            a{
+
+        li {
+            list-style: none;
+
+            a {
                 color: $white;
                 font-family: "Open-Sans-Light", sans-serif, Arial;
                 line-height: 35px;
             }
 
-            a:hover{
+            a:hover {
                 color: $gold;
             }
         }
-    }   
-    
-    .services-box{
+    }
+
+    .services-box {
         margin-bottom: 40px;
+
         @media only screen and (max-device-width: 767px) {
             margin-bottom: 0px;
         }
     }
 
-    .other-services-box{
+    .other-services-box {
         @media only screen and (max-device-width: 767px) {
             margin-bottom: 40px;
         }
     }
 
-    .copyrite-box{
+    .copyrite-box {
         background-color: $dark;
         padding: 30px 0 15px 0;
         color: $gold;
-         font-size: 12px;
+        font-size: 12px;
+    }
+}
+
+
+/* 9.  Inner content */
+.inner-box {
+    text-align: left;
+    background-color: $bg-grey;
+
+    .contact-info-box {
+        padding-top: 15px;
+
+        @media only screen and (max-device-width: 767px) {
+            margin-top: 30px;
+        }
+
+        i {
+            color: $dark;
+            font-size: 20px;
+        }
+
+        span {
+            font-family: "Open-Sans-Bold", sans-serif, Arial;
+            color: $dark;
+        }
+
+        ul {
+            li {
+                padding-left: 20px;
+                color: $dark;
+                list-style: none;
+
+                a {
+                    color: $dark;
+                }
+            }
+
+            li:nth-child(1) {
+                padding-left: 0px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .item-box {
+        margin-bottom: 50px;
+
+        a {
+            padding-top: 205px;
+            display: block;
+            color: $dark;
+            text-align: center;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    #iphone {
+
+        .item-box:nth-child(1) a {
+            background: url(../img/gadgets/iphonexsmax2.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(1):hover a {
+            background: url(../img/gadgets/iphonexsmax1.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(2) a {
+            background: url(../img/gadgets/iphonexs2.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(2):hover a {
+            background: url(../img/gadgets/iphonexs1.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(3) a {
+            background: url(../img/gadgets/iphonexr2.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(3):hover a {
+            background: url(../img/gadgets/iphonexr1.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(4) a {
+            background: url(../img/gadgets/iPhoneX02.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(4):hover a {
+            background: url(../img/gadgets/iPhoneX01.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(5) a {
+            background: url(../img/gadgets/iphone8plus_1.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(5):hover a {
+            background: url(../img/gadgets/iphone8plus_2.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(6) a {
+            background: url(../img/gadgets/iphone8_1.jpg) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(6):hover a {
+            background: url(../img/gadgets/iphone8_2.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(7) a {
+            background: url(../img/gadgets/iphone7plus.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(7):hover a {
+            background: url(../img/gadgets/iphone7plus-hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(8) a {
+            background: url(../img/gadgets/iphone7.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(8):hover a {
+            background: url(../img/gadgets/iphone7-hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(9) a {
+            background: url(../img/gadgets/iphone5s_1.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(9):hover a {
+            background: url(../img/gadgets/iphone5s_2.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(10) a {
+            background: url(../img/gadgets/iphone6splus.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(10):hover a {
+            background: url(../img/gadgets/iphone6splus_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(11) a {
+            background: url(../img/gadgets/iphone6s.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(11):hover a {
+            background: url(../img/gadgets/iphone6s_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(12) a {
+            background: url(../img/gadgets/iphone6plus.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(12):hover a {
+            background: url(../img/gadgets/iphone6plus_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(13) a {
+            background: url(../img/gadgets/iphone6.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(13):hover a {
+            background: url(../img/gadgets/iphone6_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(14) a {
+            background: url(../img/gadgets/iphone5c.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(14):hover a {
+            background: url(../img/gadgets/iphone5c_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(15) a {
+            background: url(../img/gadgets/iphone5s.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(15):hover a {
+            background: url(../img/gadgets/iphone5s_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(16) a {
+            background: url(../img/gadgets/iphone5.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(16):hover a {
+            background: url(../img/gadgets/iphone5_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(17) a {
+            background: url(../img/gadgets/iphone4.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(17):hover a {
+            background: url(../img/gadgets/iphone4_hover.png) center bottom 35px no-repeat;
+        }
+    }
+
+    #ipad {
+
+        .item-box:nth-child(1) a {
+            background: url(../img/gadgets/ipad2.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(1):hover a {
+            background: url(../img/gadgets/ipad2_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(2) a {
+            background: url(../img/gadgets/ipad4.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(2):hover a {
+            background: url(../img/gadgets/ipad4_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(3) a {
+            background: url(../img/gadgets/ipad4.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(3):hover a {
+            background: url(../img/gadgets/ipad4_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(4) a {
+            background: url(../img/gadgets/ipad_mini.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(4):hover a {
+            background: url(../img/gadgets/ipad_mini_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(5) a {
+            background: url(../img/gadgets/ipad_mini2.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(5):hover a {
+            background: url(../img/gadgets/ipad_mini2_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(6) a {
+            background: url(../img/gadgets/ipad_mini4.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(6):hover a {
+            background: url(../img/gadgets/ipad_mini4_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(7) a {
+            background: url(../img/gadgets/ipad_mini4.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(7):hover a {
+            background: url(../img/gadgets/ipad_mini4_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(8) a {
+            background: url(../img/gadgets/ipad_air.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(8):hover a {
+            background: url(../img/gadgets/ipad_air_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(9) a {
+            background: url(../img/gadgets/ipad_air2.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(9):hover a {
+            background: url(../img/gadgets/ipad_air2_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(10) a {
+            background: url(../img/gadgets/ipad_pro.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(10):hover a {
+            background: url(../img/gadgets/ipad_pro_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(11) a {
+            background: url(../img/gadgets/ipad_air2.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(11):hover a {
+            background: url(../img/gadgets/ipad_air2_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(12) a {
+            background: url(../img/gadgets/ipad_air2.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(12):hover a {
+            background: url(../img/gadgets/ipad_air2_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(13) a {
+            background: url(../img/gadgets/ipad_pro_10.5.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(13):hover a {
+            background: url(../img/gadgets/ipad_pro_10.5_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(14) a {
+            background: url(../img/gadgets/ipad_pro.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(14):hover a {
+            background: url(../img/gadgets/ipad_pro_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(15) a {
+            background: url(../img/gadgets/ipad_air2.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(15):hover a {
+            background: url(../img/gadgets/ipad_air2_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(16) a {
+            background: url(../img/gadgets/11main1.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(16):hover a {
+            background: url(../img/gadgets/11main2.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(17) a {
+            background: url(../img/gadgets/12main1.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(17):hover a {
+            background: url(../img/gadgets/12main2.png) center bottom 35px no-repeat;
+        }
+    }
+
+    #mac {
+
+        .item-box:nth-child(1) a {
+            background: url(../img/gadgets/macbook.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(1):hover a {
+            background: url(../img/gadgets/macbook-hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(2) a {
+            background: url(../img/gadgets/macbook-air.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(2):hover a {
+            background: url(../img/gadgets/macbook-air-hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(3) a {
+            background: url(../img/gadgets/macbook-pro.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(3):hover a {
+            background: url(../img/gadgets/macbook-pro-hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(4) a {
+            background: url(../img/gadgets/imac.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(4):hover a {
+            background: url(../img/gadgets/imac-hover.png) center bottom 35px no-repeat;
+        }
+    }
+
+    #ipod {
+
+        .item-box:nth-child(1) a {
+            background: url(../img/gadgets/ipod_nano7.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(1):hover a {
+            background: url(../img/gadgets/ipod_nano7_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(2) a {
+            background: url(../img/gadgets/ipod_nano.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(2):hover a {
+            background: url(../img/gadgets/ipod_nano_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(3) a {
+            background: url(../img/gadgets/ipod_touch5.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(3):hover a {
+            background: url(../img/gadgets/ipod_touch5_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(4) a {
+            background: url(../img/gadgets/ipod_touch_4.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(4):hover a {
+            background: url(../img/gadgets/ipod_touch_4_hover.png) center bottom 35px no-repeat;
+        }
+
+        .item-box:nth-child(5) a {
+            background: url(../img/gadgets/ipod_shuffle.png) center bottom 35px no-repeat;
+            transition: .5s;
+        }
+    }
+
+    #applewatch {
+
+        .item-box:nth-child(1) a {
+            background: url(../img/gadgets/apple_watch_edition_hover.png) center bottom 65px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(1):hover a {
+            background: url(../img/gadgets/apple_watch_edition.png) center bottom 65px no-repeat;
+        }
+
+        .item-box:nth-child(2) a {
+            background: url(../img/gadgets/apple_watch_sport_hover.png) center bottom 65px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(2):hover a {
+            background: url(../img/gadgets/apple_watch_sport.png) center bottom 65px no-repeat;
+        }
+
+        .item-box:nth-child(3) a {
+            background: url(../img/gadgets/apple_watch_hover.png) center bottom 65px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(3):hover a {
+            background: url(../img/gadgets/apple_watch.png) center bottom 65px no-repeat;
+        }
+
+        .item-box:nth-child(4) a {
+            background: url(../img/gadgets/apple-watch-series-3.png) center bottom 65px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(4):hover a {
+            background: url(../img/gadgets/apple-watch-series-3-hover.png) center bottom 65px no-repeat;
+        }
+
+        .item-box:nth-child(5) a {
+            background: url(../img/gadgets/apple-watch-series-41.png) center bottom 65px no-repeat;
+            transition: .5s;
+        }
+
+        .item-box:nth-child(5):hover a {
+            background: url(../img/gadgets/apple-watch-series-4.png) center bottom 65px no-repeat;
+        }
+    }
+}
+
+
+
+/* 10. Contact form */
+.wpcf7#wpcf7-f8-o1 {
+    width: 100%;
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-validation-errors {
+    display: none !important;
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form {
+    width: 100%;
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form .wpcf7-not-valid-tip {
+    line-height: 35px;
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form .menu-550 .wpcf7-not-valid-tip {
+    line-height: 18px;
+    padding-top: 12px;
+}
+
+@media only screen and (max-device-width: 575px) {
+    .wpcf7#wpcf7-f8-o1 .wpcf7-form .menu-550 .wpcf7-not-valid-tip {
+        line-height: 14px;
+    }
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form .wpcf7-validation-errors,
+.wpcf7#wpcf7-f8-o1 .wpcf7-form .wpcf7-mail-sent-ok {
+    margin-top: 60px;
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form .help-develop {
+    float: left;
+    display: block;
+    line-height: 60px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-device-width: 575px) {
+    .wpcf7#wpcf7-f8-o1 .wpcf7-form .help-develop {
+        line-height: 40px;
+    }
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form span.wpcf7-form-control-wrap {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-bottom: 1%;
+}
+
+@media only screen and (max-device-width: 575px) {
+    .wpcf7#wpcf7-f8-o1 .wpcf7-form span.wpcf7-form-control-wrap {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form .wpcf7-form-control-wrap.menu-valute {
+    width: auto;
+}
+
+@media only screen and (max-device-width: 575px) {
+    .wpcf7#wpcf7-f8-o1 .wpcf7-form .wpcf7-form-control-wrap.menu-valute {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form span.textarea-text {
+    width: 100%;
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form p input {
+    width: 99%;
+    float: left;
+    padding: 0.75rem;
+    border-radius: 0;
+    border: solid 1px #eee;
+}
+
+@media only screen and (max-device-width: 575px) {
+    .wpcf7#wpcf7-f8-o1 .wpcf7-form p input {
+        width: 100%;
+    }
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form p select {
+    height: 40px;
+    margin-top: 10px;
+    float: left;
+}
+
+@media only screen and (max-device-width: 575px) {
+    .wpcf7#wpcf7-f8-o1 .wpcf7-form p select {
+        margin-top: 0px;
+    }
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form p .wpcf7-email {
+    margin-left: 2%;
+}
+
+@media only screen and (max-device-width: 575px) {
+    .wpcf7#wpcf7-f8-o1 .wpcf7-form p .wpcf7-email {
+        margin-left: 0;
+        margin-top: 2%;
+    }
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form p .wpcf7-textarea {
+    margin-top: 2%;
+    padding: 0.75rem;
+    border-radius: 0;
+    border: solid 1px #eee;
+    width: 100%;
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form p .wpcf7-textarea,
+.wpcf7#wpcf7-f8-o1 .wpcf7-form p .wpcf7-input {
+    color: #888;
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form p input:focus,
+.wpcf7#wpcf7-f8-o1 .wpcf7-form p textarea:focus {
+    outline-color: $gold;
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form p .wpcf7-submit {
+    display: block;
+    height: 60px;
+    width: 230px;
+    background-color: #333;
+    border: none;
+    color: $white;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    cursor: pointer;
+    box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form p .wpcf7-submit:hover {
+    box-shadow: none;
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form span.textarea-comment {
+    width: 100%;
+}
+
+.wpcf7#wpcf7-f8-o1 .wpcf7-form .menu-valute .wpcf7-not-valid-tip {
+    line-height: 18px;
+    padding-top: 12px;
+}
+
+@media only screen and (max-device-width: 575px) {
+    .wpcf7#wpcf7-f8-o1 .wpcf7-form .menu-valute .wpcf7-not-valid-tip {
+        line-height: 14px;
     }
 }
