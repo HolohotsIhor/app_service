@@ -36,6 +36,15 @@ $(document).ready(function() {
         };
     });
 
+    /* Pop up */
+    $(".pop-up-show").click(function() {
+        $(".pop-up-box").css('display','block');
+    })
+
+    $(".close-box").click(function() {
+        $(".pop-up-box").css('display','none');
+    })
+
     /* Slider */
     $('.carousel').carousel({
         interval: 8000
@@ -53,6 +62,16 @@ $(document).ready(function() {
     });
     });
 
+    /* Button call */
+    $(document).ready(
+        function () {
+            $(".log-in").click(
+                function () {
+                    $(".panel_call").animate({width:'toggle'}, 350)
+                    return false;
+                }
+                )
+        }
+        );
 });
 
-  
