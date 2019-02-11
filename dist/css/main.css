@@ -1542,7 +1542,9 @@ footer {
   transition: .2s;
   cursor: pointer;
   -webkit-box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0.2); }
+          box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 30px;
+          border-radius: 30px; }
 
 .wpcf7#wpcf7-f8-o1 .wpcf7-form p .wpcf7-submit:hover {
   -webkit-box-shadow: none;
