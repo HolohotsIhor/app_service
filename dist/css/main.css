@@ -12,6 +12,7 @@
 10. Contact form
 11. Table box
 12. Call button
+13. Breadcrumb box
 
 */
 /* 1. Fonts including */
@@ -123,7 +124,7 @@ header {
           header .top-bar .social-icons-box .wrapper-info .status-box .pop-up-box {
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(36, 36, 36, 0.99);
             position: fixed;
             top: 0;
             left: 0;
@@ -134,7 +135,7 @@ header {
             overflow: hidden; }
             @media only screen and (max-device-width: 575px) {
               header .top-bar .social-icons-box .wrapper-info .status-box .pop-up-box {
-                padding-top: 50px; } }
+                padding-top: 70px; } }
             @media only screen and (max-device-width: 575px) {
               header .top-bar .social-icons-box .wrapper-info .status-box .pop-up-box .widget-layout {
                 max-width: 300px;
@@ -252,9 +253,7 @@ header {
     border: none;
     right: 20px;
     top: 5px;
-    background: rgba(0, 0, 0, 0.95);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: #242424;
     display: none;
     z-index: 999; }
     @media only screen and (max-device-width: 991px) {
@@ -348,7 +347,7 @@ header {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(36, 36, 36, 0.99);
     z-index: 50;
     right: 0;
     top: 0;
@@ -1837,3 +1836,17 @@ footer {
     -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
             transform: rotate(0deg) scale(0.7) skew(1deg);
     opacity: .2; } }
+
+/* 13. Breadcrumb box */
+.breadcrumb-box {
+  text-align: left; }
+  .breadcrumb-box a {
+    color: #777; }
+    @media only screen and (max-device-width: 480px) {
+      .breadcrumb-box a {
+        font-size: 12px; } }
+  @media only screen and (max-device-width: 480px) {
+    .breadcrumb-box span {
+      font-size: 12px; } }
+  .breadcrumb-box a:hover {
+    color: #777; }
