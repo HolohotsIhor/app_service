@@ -13,6 +13,7 @@
 11. Table box
 12. Call button
 13. Breadcrumb box
+14. Calculator
 
 */
 
@@ -2594,7 +2595,7 @@ footer {
     }
 
     span{
-        
+
         @media only screen and (max-device-width: 480px) {
             font-size: 12px;
         }
@@ -2603,4 +2604,83 @@ footer {
     a:hover{
         color: #777;
     }
+}
+
+/* 14. Calculator */
+.form-calculator{
+    text-align: left;
+
+    .element-item{
+        margin-bottom: 20px;
+
+        select{
+            outline: none;
+            padding: .5rem 1rem;
+            color: #777;
+            border-color: #eee;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        select:focus{
+            outline-color: #eee;
+        }
+
+        ul{
+            margin-bottom: 0;
+
+            li{
+                float: left;
+                padding: .7rem;
+                margin-right: 15px;
+                border: solid 2px #eee;
+                cursor: pointer;
+                transition: .3s;
+                border-radius: 3px;
+
+                @media only screen and (max-device-width: 480px) {
+                 margin-right: 5px;
+                 padding: .3rem;
+                 font-size: 13px;
+             }
+
+             img{
+                max-width: 40px;
+            }
+        }
+
+        li:last-child{
+            margin-right: 0; 
+        }
+
+        li:focus, li:hover{
+            outline: none;
+            border: solid 2px $gold;
+        }
+    }
+
+    .label{
+
+        label{
+            margin-bottom: 5px;
+        }
+    }
+
+    .final-price{
+        padding-left: 15px;
+        font-weight: bold;
+        font-family: "Open-Sans-Bold", sans-serif, Arial;
+    }
+
+    .help-box{
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    .status-list{
+        li{
+            padding: .7rem .4rem .7rem .7rem;
+        }
+    }
+}
 }

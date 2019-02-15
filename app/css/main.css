@@ -13,6 +13,7 @@
 11. Table box
 12. Call button
 13. Breadcrumb box
+14. Calculator
 
 */
 /* 1. Fonts including */
@@ -1850,3 +1851,55 @@ footer {
       font-size: 12px; } }
   .breadcrumb-box a:hover {
     color: #777; }
+
+/* 14. Calculator */
+.form-calculator {
+  text-align: left; }
+  .form-calculator .element-item {
+    margin-bottom: 20px; }
+    .form-calculator .element-item select {
+      outline: none;
+      padding: .5rem 1rem;
+      color: #777;
+      border-color: #eee;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      cursor: pointer; }
+    .form-calculator .element-item select:focus {
+      outline-color: #eee; }
+    .form-calculator .element-item ul {
+      margin-bottom: 0; }
+      .form-calculator .element-item ul li {
+        float: left;
+        padding: .7rem;
+        margin-right: 15px;
+        border: solid 2px #eee;
+        cursor: pointer;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        -webkit-border-radius: 3px;
+                border-radius: 3px; }
+        @media only screen and (max-device-width: 480px) {
+          .form-calculator .element-item ul li {
+            margin-right: 5px;
+            padding: .3rem;
+            font-size: 13px; } }
+        .form-calculator .element-item ul li img {
+          max-width: 40px; }
+      .form-calculator .element-item ul li:last-child {
+        margin-right: 0; }
+      .form-calculator .element-item ul li:focus, .form-calculator .element-item ul li:hover {
+        outline: none;
+        border: solid 2px #ffe5db; }
+    .form-calculator .element-item .label label {
+      margin-bottom: 5px; }
+    .form-calculator .element-item .final-price {
+      padding-left: 15px;
+      font-weight: bold;
+      font-family: "Open-Sans-Bold", sans-serif, Arial; }
+    .form-calculator .element-item .help-box {
+      visibility: hidden;
+      font-size: 0; }
+    .form-calculator .element-item .status-list li {
+      padding: .7rem .4rem .7rem .7rem; }
