@@ -1462,6 +1462,11 @@ footer {
 .inner-box {
     text-align: left;
     background-color: $bg-grey;
+    color: $dark;
+
+    a{
+        color: $dark;
+    }
 
     h2 {
         text-align: left;
@@ -2585,6 +2590,7 @@ footer {
 /* 13. Breadcrumb box */
 .breadcrumb-box{
     text-align: left;
+    margin-bottom: 30px;
 
     a{
         color: #777;
@@ -2609,6 +2615,7 @@ footer {
 /* 14. Calculator */
 .form-calculator{
     text-align: left;
+    margin-top: 20px;
 
     .element-item{
         margin-bottom: 20px;
@@ -2639,12 +2646,12 @@ footer {
                 border-radius: 3px;
 
                 @media only screen and (max-device-width: 480px) {
-                 margin-right: 5px;
-                 padding: .3rem;
-                 font-size: 13px;
-             }
+                   margin-right: 5px;
+                   padding: .3rem;
+                   font-size: 13px;
+               }
 
-             img{
+               img{
                 max-width: 40px;
             }
         }
@@ -2663,6 +2670,7 @@ footer {
 
         label{
             margin-bottom: 5px;
+            font-family: "Open-Sans-Bold", sans-serif, Arial;
         }
     }
 
@@ -2683,4 +2691,5 @@ footer {
         }
     }
 }
+
 }

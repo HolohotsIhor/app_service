@@ -1051,7 +1051,10 @@ footer {
 /* 9.  Inner content */
 .inner-box {
   text-align: left;
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  color: #242424; }
+  .inner-box a {
+    color: #242424; }
   .inner-box h2 {
     text-align: left;
     letter-spacing: 0px;
@@ -1840,7 +1843,8 @@ footer {
 
 /* 13. Breadcrumb box */
 .breadcrumb-box {
-  text-align: left; }
+  text-align: left;
+  margin-bottom: 30px; }
   .breadcrumb-box a {
     color: #777; }
     @media only screen and (max-device-width: 480px) {
@@ -1854,7 +1858,8 @@ footer {
 
 /* 14. Calculator */
 .form-calculator {
-  text-align: left; }
+  text-align: left;
+  margin-top: 20px; }
   .form-calculator .element-item {
     margin-bottom: 20px; }
     .form-calculator .element-item select {
@@ -1893,7 +1898,8 @@ footer {
         outline: none;
         border: solid 2px #ffe5db; }
     .form-calculator .element-item .label label {
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      font-family: "Open-Sans-Bold", sans-serif, Arial; }
     .form-calculator .element-item .final-price {
       padding-left: 15px;
       font-weight: bold;
