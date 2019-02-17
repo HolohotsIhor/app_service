@@ -79,6 +79,9 @@ $(document).ready(function() {
         /* Logic */
 
         /* iPhone 5 */
+        if (gadgetModel == 'iphone-5') {
+            $('.memory-list li:last-child').css('display','none');
+        }
         if (gadgetModel == 'iphone-5' && statusLevel == 1 && memorySize != 0) {
             finalModelPrice = 382; 
             $('#final-price').html(finalModelPrice);
@@ -93,6 +96,9 @@ $(document).ready(function() {
         }
 
         /* iPhone 5c */
+        if (gadgetModel == 'iphone-5c') {
+            $('.memory-list li:last-child').css('display','none');
+        }
         if (gadgetModel == 'iphone-5c' && statusLevel == 1 && memorySize != 0) {
             finalModelPrice = 382; 
             $('#final-price').html(finalModelPrice);
@@ -107,6 +113,9 @@ $(document).ready(function() {
         }
 
         /* iPhone 5s */
+        if (gadgetModel == 'iphone-5s') {
+            $('.memory-list li:last-child').css('display','none');
+        }
         if (gadgetModel == 'iphone-5s' && statusLevel == 1 && memorySize != 0) {
             finalModelPrice = 382; 
             $('#final-price').html(finalModelPrice);
